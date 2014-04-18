@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Actor Invitations</title>
+    <link rel="stylesheet" type="text/css" href="css/datatables.css" />
+  </head>
+  <body>
+		<div class="list">
+			<h2>Invitations</h2>
+			<table cellspacing="0" cellpadding="0" data-bind="dataTable:
+				{
+					dataSource: invites,
+					sPaginationType: 'full_numbers',
+					rowTemplate: 'inviteGridTemplate',
+					iDisplayLength: 25,
+					gridId: 'addressGrid',
+					autoWidth: 'false',
+					bProcessing: 'true',
+					aaSorting: [[0,'desc']],
+					gsDom: '<\'top\'i>rt<\'top\'flp><\'clear\'>',
+					oLanguage: {
+							sEmptyTable: 'There are no invitations\n\n',
+							sZeroRecords: 'There are no invitations that match your filtering criteria.',
+							sLoadingRecords:  'Please wait -- loading ...',
+							sProcessing: 'Loading page',
+							sInfoEmpty: ''
+					 },
+					columns: [
+							{'name':'deadline','sWidth' : '120px' },
+							{'name':'title', 'sWidth' : '250px'  },
+							{'name':'subject', 'sWidth' : '250px'  },
+							{'name':'castingDirector', 'sWidth' : '140px' }
+					]}">
+					<thead>
+							<tr>
+									<th>DEADLINE</th>
+									<th>TITLE</th>
+									<th>MESSAGE SUBJECT</th>
+									<th>CASTING DIRECTOR</th>
+							</tr>
+					</thead>
+					<tbody>
+					</tbody>
+			</table>
+
+			<script id="inviteGridTemplate" type="text/html">
+				<td data-bind="text: deadline" nowrap="nowrap"></td><td><a href data-bind="text: title, attr: { href: link }"></a></td><td data-bind="text: subject" nowrap="nowrap"></td><td data-bind="text: castingDirector"></td>
+			</script>
+
+		</div>
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+ 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/datatables/1.9.4/jquery.dataTables.min.js"></script>
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/knockout/3.0.0/knockout-min.js"></script>
+		<script type="text/javascript" src="js/jquery.dataTables.plugins.js"></script>
+		<script type="text/javascript" src="js/invitations.js"></script>
+		<script type="text/javascript" src="js/knockout-datatables.js"></script>
+
+  </body>
+</html>  

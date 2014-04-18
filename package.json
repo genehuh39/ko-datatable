@@ -1,0 +1,39 @@
+{
+  "name": "ko-datatable",
+  "version": "1.0.0",
+  "description": "Knockout Datatable Test",
+  "keywords": [
+    "OpenShift",
+    "Node.js",
+    "application",
+    "openshift",
+    "mmaexpert"
+  ],
+  "author": {
+    "name": "Gene Huh",
+    "email": "genehuh@gmail.com",
+    "url": "http://mmaexpert2-ghuh.rhcloud.com/"
+  },
+  "homepage": "http://mmaexpert2-ghuh.rhcloud.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openshift/origin-server"
+  },
+
+  "engines": {
+    "node": ">= 0.6.0",
+    "npm": ">= 1.0.0"
+  },
+
+  "dependencies": {
+    "express": "~3.4.4",
+    "path": "~0.4.9"
+
+  },
+  "devDependencies": {},
+  "bundleDependencies": [],
+
+  "private": true,
+  "main": "server.js"
+}
+

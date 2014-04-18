@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+div.list {
+	width: 760px;
+}
+.list h2 {
+	margin-bottom: 0px;
+}
+
+.list td {
+	vertical-align: top;
+	font-size: 11px;
+}
+
+.list th {
+	font-size: 10px;
+	color: #a1000e;
+	font-weight: bold;
+	height: 20px;
+}
+
+.list tr td {
+	border-bottom: 1px solid #E5E5E5;
+}
+
+.list td a, .list td a:visited {
+	color: #9B0E07;
+	text-decoration: underline;
+}
+
+.sorting_asc {
+	background: url("../images/bg_arrow_up.gif") no-repeat scroll right center #E0E0E0;
+	border-bottom: 2px solid #A1000E;
+}
+
+.sorting_desc {
+	background: url("../images/bg_arrow_down.gif") no-repeat scroll right center #E0E0E0;
+	border-bottom: 2px solid #A1000E;
+}
+
+.sorting {
+	background: #CCC;
+}
+/* pagination styles */
+.dataTables_paginate {
+	text-align: center;
+	margin: 30px 0px 0px;
+	clear: both;
+}
+.paging_full_numbers {}
+.first {
+	background: url('../images/arrow-left-dbl.png') no-repeat left center;
+	padding-left: 17px;
+}
+.previous {
+	background: url('../images/arrow-left.png') no-repeat left center;
+	padding-left: 17px;
+}
+.next {
+	background: url('../images/arrow-right.png') no-repeat right center;
+	padding-right: 17px;
+}
+.last {
+	background: url('../images/arrow-right-dbl.png') no-repeat right center;
+	padding-right: 17px;
+}
+.paginate_active {
+	font-weight: bold;
+	color: #a1000e;
+	text-decoration: none;
+	cursor: default;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+.paginate_button {
+	color:#333;
+	text-decoration:none;
+	display: inline-block;
+	height: 15px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	cursor: pointer;
+	margin: auto 10px;
+}
+.paginate_button:hover {
+}
+.paginate_button:active {
+}
+.paginate_button_disabled {
+	color: #999;
+	background: url(none);
+	cursor: default;
+}
+.bottom {
+	clear: both;
+	margin-top: 25px;
+}
+.dataTables_filter {
+	margin: 0px 0px 10px;
+	padding: 0px 0px 10px;
+	float: right;
+	font-size: 11px;
+}
+.dataTables_length {
+	margin: 0px 0px 10px;
+	padding: 0px 0px 10px;
+	float: left;
+	font-size: 11px;
+}
